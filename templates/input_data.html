@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Prediction</title>
+    <div id="title" align="Center" style="font-size:300%">Data Prediction</div>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+
+<body style="background-color:green;">
+<div class="col-sm-12">
+    <div class="col-sm-3" align="center">
+        <h1> Insert Input :</h1>
+        <form action="/predict" method="post" id="send">
+        <textarea form="send" name="kanika" rows="8" cols="100" id="content" type="text" style="margin-left:20px"></textarea>
+        <h1>Show Input Value:</h1>
+            <div id="display_area"></div>
+            <input name="data" value="predict" type="submit" id="btn" style="margin-top:20px" class="w3-btn w3-black">
+        </form>
+      <div class="col-sm-9 bg">
+
+
+   <br>
+   <br>
+   {{ predicition}}
+
+    </div>
+    </div>
+</div>
+</body>
+</html>
